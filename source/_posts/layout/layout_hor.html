@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        html *{
+            margin: 0;
+            padding: 0;
+        }
+        .layout{
+            margin-top: 20px;
+        }
+        .layout .left, .layout .center, .layout .right{
+            min-height: 100px;
+        }
+        .layout .left{
+            background-color: yellow;
+        }
+        .layout .right{
+            background-color: #4AA8D8;
+        }
+        .layout .center{
+            background-color: #ff5722;
+        }
+    </style>
+</head>
+<body>
+    <section class="layout float">
+        <style media="screen">
+            .layout.float{
+                min-height: 100px;
+            }
+            .layout.float .left{
+                float: left;
+                width: 100px;
+            }
+            .layout.float .right{
+                float: right;
+                width: 100px;
+            }
+        </style>
+        <div class="left"></div>
+        <div class="right"></div>
+        <article class="center">
+            <h1>我是浮动的解决方案哟~~</h1>
+            <div class="desc">
+                <p>内容内容内容内容</p>
+                <p>内容内容内容内容</p>
+                <p>内容内容内容内容</p>
+            </div>
+        </article>
+    </section>
+</body>
+</html>
